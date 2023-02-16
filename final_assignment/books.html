@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MH Online Book Shop</title>
+        <link rel="icon" href="Logo.png">
+        <link rel="stylesheet" type="text/css" href="Final_Assignment.css">
+        <script defer src="script1.js"></script>
+
+    </head>
+    <body class="books_body">
+        <section class="header">
+            <img src="Logo.png" alt="logo" id="logo">
+            <h1>MH ONLINE BOOK SHOP</h1>
+            <h3>"Save Time and Read More"</h3>
+
+            <nav class="navbar">
+                <input type="checkbox" name="nav-toggle" id="nav-toggle">
+                <ul class="nav-links">
+                    <li class="nav-link"><a href="Final_Assignment.html">HOME</a></li>
+                    <li class="nav-link"><a href="books.html" class="active">BOOKS</a></li>
+                    <li class="nav-link"><a href="magazines.html">MAGAZINES</a></li>
+                    <li class="nav-link"><a href="contacts.html">CONTACT</a></li>
+                </ul>
+                <label for="nav-toggle" class="icon-burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </label>
+            </nav>
+        </section>
+
+        <section class="bpage_body"  id="blur">
+            <h2>COLLECT YOUR FAVORITE BOOKS</h2>
+            <form class="form">
+                <label for="book-name" class="label">ENTER BOOK NAME </label>
+                <br>
+                <input type="text" id="book-name" placeholder="Book name"> 
+                <br>
+                <div class="container">
+                    <button type="button" id="search" onclick= "openPopup()">Search</button>
+                </div>
+            </form>
+            <div class="img-gallery">
+                <div>
+                    <h4>Education Books</h4>
+                    <img src="educationbooks.jpg" alt="education_books">
+                </div>
+                                                    
+                <div>
+                    <h4>Story Books</h4>
+                    <img src="storybooks.jpg" alt="story_books">
+                </div>
+                                        
+                <div>
+                    <h4>Novels</h4>
+                    <img src="novel.jpg" alt="Novels">
+                </div>
+                                      
+                <div>
+                    <h4>Exercise Books</h4> 
+                    <img src="notebooks.png" alt="Note Books">  
+                </div>
+
+            </div>
+        </section>
+
+        <div class="popup" id="popup">
+            <img src="tik.png" alt="tick-mark-icon">
+            <p>YES! <br> This Book is available.</p>
+            <button type="button" onclick="closePopup()">Back</button>
+            <button type="button" onclick="location.href='orders.html'">Order</button>
+        </div>
+
+        <section class="footer">
+            <p>
+                Copyright &copy MH online book shop (Pvt) Ltd.
+            </p>
+
+        </section>
+        
+
+    </body>
+</html>
