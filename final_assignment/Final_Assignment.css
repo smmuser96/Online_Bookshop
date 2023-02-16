@@ -548,8 +548,4 @@ label {
         scale: 0.7;
     }
 }
-@media (max-width : 414px)  {
-    .socialmedia, .contact-info{
-        scale: 0.5;
-    }
-}
+
