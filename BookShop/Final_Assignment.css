@@ -1,0 +1,555 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Page header*/
+.header{
+    margin: 0;
+    width: auto;
+    height: auto;
+    background-color:rgb(0, 0, 0, 0.3);
+    padding-left: 3%;   
+}
+
+/*Header-Logo*/
+#logo{
+    width: 20vmin;
+    margin: 0;
+    float: left;
+}
+
+/*Header title*/
+h1{
+    margin: 0;
+    color: white;
+    font-size: 5vmin;
+    padding-top: 15px;
+    font-style: italic;
+    
+}
+
+/*Header subtitle*/
+h3{
+    margin: 0;
+    color: white;
+    font-size: 3vmin;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+/****************************Home-page**********************************/
+.home_body{
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-image:url('./bg1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.hpage_body{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.hpage_body p{
+    background: rgb(255, 255, 255, 0.4);
+    font-size: 3vmin;
+    font-weight: bold;
+    padding: 4vmin;
+    margin: 3% 20% ;
+    border: 5px solid none;
+    border-radius: 10px;
+    
+}
+
+.hpage_body img{
+    width: 30vmin;
+    padding: 10px;
+    background-color: rgb(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 10px 5px black;
+}
+
+/*Page footer*/
+body {
+    min-height: 100vh;
+}
+.footer{
+    color: white;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    background-color:rgb(0, 0, 0, 0.6);
+    padding-top: 20px;
+    bottom: 0;
+    position: sticky;
+    top: 100%;
+}
+
+/*Navbar*/
+.navbar{
+    width: auto;
+    margin: 0;
+    position: absolute;
+    top: 5%;
+    right: 0%;
+    float: right;
+    font-size: 20px;
+    padding: 8px;
+    color: white;
+    
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link a{
+    margin: 0 30px;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.nav-link a:hover{
+    background-color:white;
+    color:black;
+    font-weight: bold;
+    transition: 0.1s;
+    font-size: large;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-link .active {
+    background-color:white;
+    color:black;
+    font-weight: bold;
+    font-size: large;
+    text-transform: uppercase;
+    border-radius: 5PX;
+} 
+
+#nav-toggle{
+    position: absolute;
+    top: -100px;
+}
+
+nav .icon-burger{
+    display: none;
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    transform: translateY(-10%);
+
+}
+
+nav .icon-burger .line{
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    margin: 5px 10px;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+
+/*make rasponsive navbar*/
+@media only screen  and (max-width: 1400px){
+    .navbar{
+        padding: 0;
+    }
+    .nav-links{
+        float: left;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 0px;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: rgb(33, 28, 28);
+        overflow: hidden;
+        box-sizing: border-box;
+        transition: all .5s ease-in-out;
+    }
+
+    .nav-links a{
+        font-size: 20px;
+    }
+
+    nav :checked~ .nav-links{
+        bottom: 0;
+    }
+
+    nav .icon-burger{
+        display: block;
+    }
+
+}
+
+/*********************************books-page***************************/
+
+.books_body{
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-image:url('./bg2.1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+    
+}
+
+.bpage_body h2{
+    margin: 0;
+    color: whitesmoke;
+    font-size: 4vmin;
+    padding: 15px;
+    font-style: italic;
+    
+}
+/* Image gallery*/
+
+.img-gallery {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.img-gallery h4{
+    margin: 0;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.bpage_body .img-gallery img{
+    padding: 10px;
+    box-shadow: 10px 10px 20px 5px whitesmoke;
+}
+
+.bpage_body .img-gallery img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/***********************magazines-page*********************************/
+
+.magazines_body{
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-image:url('./bg3.2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.mpage_body h2{
+    margin: 0;
+    color: black;
+    font-size: 4vmin;
+    padding: 15px;
+    font-style: italic;
+}
+
+.mpage_body .img-gallery h4{
+    margin: 0;
+    padding: 10px;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.mpage_body .img-gallery img{
+    padding: 10px;
+    box-shadow: 1px 1px 20px 5px black;
+}
+
+.mpage_body .img-gallery img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/***********Search bar for books and magazines************/
+
+.form{
+    text-align: center;
+    align-items: center;
+}
+
+label {
+    margin: 0;
+    color:black;
+    font-size: 3vmin;
+    padding: 15px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#book-name, #magazine-name{
+    width: 50%;
+    padding: 10px;
+    margin: 10PX;
+    border: 3px solid gray;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+
+#book-name:hover, #magazine-name:hover{
+    background-color: rgb(129, 174, 229);
+    cursor: pointer;
+}
+
+#search{
+    padding: 8px 30px;
+    border:none ;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(58, 58, 210);
+}
+
+#search:hover{
+    padding: 10px 32px ;
+    font-weight: bold;
+    text-transform: uppercase;   
+}
+ 
+/***********************************contact-page**************************************/
+
+.contact_body{
+    margin:0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(72, 70, 70);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.cpage_body h2{
+    margin: 0;
+    color: whitesmoke;
+    font-size: 4vmin;
+    padding: 15px;
+    font-style: italic;
+}
+
+.cpage_body h4{
+    font-size: 2.5vmin;
+}
+
+.contact-info, .socialmedia {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    color: whitesmoke;  
+}
+
+.cpage_body img{
+    width: 75px;
+    padding: 20px;
+}
+
+.socialmedia img{
+    width: 80px;
+    height: 80px;
+}
+
+.socialmedia img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.contact-info #clink:hover{
+    color: rgb(90, 90, 189);
+    cursor: pointer;
+}
+.cpage_body h3{
+    padding: 0 20px;
+}
+
+/*********************popup window************************/
+
+.popup, .popup_1{
+    width: 30%;
+    background-image: linear-gradient(rgb(104, 99, 99),rgb(69, 66, 66));
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: trnsform 0.4s, top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+#blur.blurbg{
+    filter: blur(80px);
+    pointer-events: none;
+    user-select: none;
+}
+
+.popup img{
+    width: 20%;
+    margin-top: -10%;
+}
+
+.popup_1 img{
+    width: 20%;
+    margin-top: -10%;
+}
+
+.popup p{
+    font-size: 4vmin;
+    font-weight:bold;
+    margin: 30px;
+    color: whitesmoke;
+}
+
+.popup button{
+    width: 30%;
+    margin: 0 30px;
+    padding: 10px ;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.popup button:hover{
+    background-color: rgb(35, 35, 245);
+    color: whitesmoke;
+    font-weight:bold;
+    text-transform: uppercase; 
+}
+
+/********************orders******************************/
+
+.orderpage_body{
+    text-align: center;
+    align-items: center;
+}
+
+.order_body{
+    margin:0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(72, 70, 70);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.orderpage_body h2{
+    margin: 0;
+    color: whitesmoke;
+    font-size: 4vmin;
+    padding: 15px;
+    font-style: italic;
+}
+
+#Place_order{
+    margin: 10px ;
+    padding: 8px 30px;
+    border:none ;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(58, 58, 210);
+    text-align: center;
+}
+
+#Place_order:hover{
+    padding: 10px 32px ;
+    font-weight: bold;
+    text-transform: uppercase;   
+}
+
+
+.btn{
+    width: 30%;
+    margin: 0 30px;
+    padding: 10px ;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(35, 35, 245);
+    color: whitesmoke;
+    font-weight:bold;
+    text-transform: uppercase; 
+}
+
+.popup_1 p{
+    font-size: 4vmin;
+    font-weight:bold;
+    margin: 30px;
+    color: whitesmoke;
+}
+
+.order table{
+    text-align: left;
+    width: 80%;
+    margin-left: 10%;
+    margin-right:10%;
+}
+
+.order label{
+    color: whitesmoke;
+}
+
+.order input{
+    width: 100%;
+    padding: 10px;
+    margin: 10PX;
+    border: 3px solid gray;
+    border-radius: 5px;
+    outline: none;
+}
+
+.container_1 .line{
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+@media (max-width : 414px)  {
+    .socialmedia, .contact-info{
+        scale: 0.5;
+    }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MH Online Book Shop</title>
+        <link rel="icon" href="Logo.png">
+        <link rel="stylesheet" type="text/css" href="Final_Assignment.css">
+        <script defer src="script1.js"></script>
+
+    </head>
+
+    <body class="order_body">
+        <section class="header">
+            <img src="Logo.png" alt="logo" id="logo">
+            <h1>MH ONLINE BOOK SHOP</h1>
+            <h3>"Save Time and Read More"</h3>
+
+            <nav class="navbar">
+                <input type="checkbox" name="nav-toggle" id="nav-toggle">
+                <ul class="nav-links">
+                    <li class="nav-link"><a href="home.html">HOME</a></li>
+                    <li class="nav-link"><a href="books.html">BOOKS</a></li>
+                    <li class="nav-link"><a href="magazines.html">MAGAZINES</a></li>
+                    <li class="nav-link"><a href="contacts.html">CONTACT</a></li>
+                </ul>
+                <label for="nav-toggle" class="icon-burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </label>
+            </nav>
+        </section>
+        
+        <section class="orderpage_body" id="blur">
+            <h2>Place your order here</h2>
+            <form class="order">                                                                                                                                   
+                <table id="order_table">
+                     <tr>
+                        <td><label for="bmname">Book/Magazine Name </label></td>
+                        <td><input type="text" name="bmname" id="order_input" placeholder="Book/Magazine Name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="copy">No. of copies </label></td>
+                        <td><input type="text" name="ncopies" id="order_input" placeholder="Copies"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="yname">Your Name </label></td>
+                        <td><input type="text" id="order_input" placeholder="Your name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="address">Your Address </label></td>
+                        <td><input type="text" id="order_input" placeholder="Address"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mnumber">Mobile Number </label></td>
+                        <td><input type="text" id="order_input" placeholder="Mobile number"><br></td>
+                    </tr>
+                </table>
+                <div class="container">
+                    <button type="button" id="Place_order" onclick="openPopup()">Place Order</button>
+                </div>
+            </form>
+            <h2>" Pay your bill after received your orders "</h2>
+        </section>
+
+        <div class="popup" id="popup">
+            <img src="qm_icon.png" alt="Question mark">
+            <p>Conform your order</p>
+            <button type="button" class="btn" onclick="closePopup()">Cancel</button>
+            <button type="button" class="btn" onclick="openpopup_1()">Conform</button>
+        </div>
+        <div class="container_1">
+            <div class="popup_1" id="popup_1">
+                <img src="hs_icon.png" alt="handsake icon">
+                <p>THANK YOU ! <br> for shoping with us.</p>
+                <div class="line"></div>
+                <p>You will recieve your order soon</p>
+                <button type="button" class="btn" onclick="location.href='home.html'">Back to Home</button>
+            </div>
+        </div>
+
+        <section class="footer">
+            <p>
+                Copyright &copy MH online book shop (Pvt) Ltd.
+            </p>
+        </section>
+       
+    </body>
+</html>
